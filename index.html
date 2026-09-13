@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clases particulares de inglés — Sevilla Este</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#top" class="logo">Inglés sin agobios</a>
+      <ul class="nav-links">
+        <li><a href="#clases">Clases</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <a href="#contacto" class="nav-cta">Reserva tu clase</a>
+      <button class="menu-btn" onclick="document.getElementById('mobile-panel').classList.toggle('open')" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="mobile-panel" id="mobile-panel">
+      <a href="#clases" onclick="document.getElementById('mobile-panel').classList.remove('open')">Clases</a>
+      <a href="#sobre-mi" onclick="document.getElementById('mobile-panel').classList.remove('open')">Sobre mí</a>
+      <a href="#contacto" onclick="document.getElementById('mobile-panel').classList.remove('open')">Contacto</a>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="container">
+      <span class="location-pill">📍 Sevilla Este y alrededores cercanos</span>
+      <h1>Inglés sin agobios</h1>
+      <p class="lead">Clases particulares para deberes, exámenes y esos temas de inglés que se te resisten. Presenciales en Sevilla Este o desde donde te venga mejor, online.</p>
+      <div class="hero-actions">
+        <a href="#contacto" class="btn-primary">Reserva tu clase</a>
+        <a href="#clases" class="btn-secondary">Ver cómo te puedo ayudar</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="clases">
+    <div class="container">
+      <span class="section-tag">Lo que ofrezco</span>
+      <h2 class="section-title">Clases pensadas para lo que necesitas ahora</h2>
+      <p class="section-desc">Nada de temario genérico: cada clase se adapta al curso, al libro de texto o al examen que tengas por delante.</p>
+
+      <div class="clases-grid">
+        <div class="clase-card">
+          <div class="clase-icon">📘</div>
+          <h3>Refuerzo escolar</h3>
+          <p>Apoyo con el temario de Primaria, ESO y Bachillerato: gramática, comprensión, writing y preparación de exámenes del cole.</p>
+          <div class="price">10€ <span>/ hora</span></div>
+        </div>
+        
+        <div class="clase-card">
+          <div class="clase-icon">✏️</div>
+          <h3>Dudas puntuales</h3>
+          <p>¿Un tema concreto que no te cuadra? Sesiones sueltas para resolver dudas específicas sin compromiso de continuidad.</p>
+          <div class="price">12€ <span>/ hora</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section" id="sobre-mi">
+    <div class="container">
+      <span class="section-tag">Quién te va a ayudar</span>
+      <h2 class="section-title">Sobre mí</h2>
+      <div class="about-grid">
+        <div class="avatar">
+          <img src="IMG_20260911_192828.jpg" alt="Foto de perfil" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+        </div>
+        <div class="about-text">
+          <p>Tengo el nivel C1 de inglés y llevo tiempo queriendo dedicarme a esto: ayudar a estudiantes a que dejen de tenerle miedo al inglés y empiecen a sacarle partido, ya sea para aprobar el próximo examen o para coger soltura de cara al futuro.</p>
+          <p>Cada alumno es distinto, así que antes de nada me gusta ver tu material — el libro de texto, el examen anterior, lo que sea — para preparar las clases sobre algo real, no sobre ejercicios genéricos.</p>
+          <div class="about-badges">
+            <span class="badge">Nivel C1 de inglés</span>
+            <span class="badge">Clases presenciales y online</span>
+            <span class="badge">Adaptado a tu curso o examen</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="container">
+      <span class="section-tag">Hablemos</span>
+      <h2 class="section-title">Contacto</h2>
+      <p class="section-desc">Cuéntame un poco tu caso y te contesto lo antes posible para organizar la primera clase.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Contacto directo</h3>
+          <div class="contact-row">
+            <span class="icon">💬</span>
+            <span>WhatsApp: 623 39 49 22</span>
+          </div>
+          <div class="contact-row">
+            <span class="icon">✉️</span>
+            <span>chrcaruvus@gmail.com</span>
+          </div>
+
+          <h3>Zona de clases presenciales</h3>
+          <div class="zone-list">
+            <span class="zone-chip">Sevilla Este</span>
+          </div>
+          <p style="font-size:13px; color:var(--ink-soft); margin-top:10px;">Para el resto de Sevilla 
+            y otras ciudades, ofrezco clases online. 
+          </p>
+          <p style="font-size:13px; color:var(--ink-soft); margin-top:10px;">
+            No se atenderán llamadas de números desconocidos, solo mensajes.
+          </p>
+        </div>
+
+        <div>
+          <div id="form-success">✅ ¡Mensaje enviado! Te contestaré lo antes posible.</div>
+          <form id="contact-form">
+            <div class="form-row">
+              <div class="field">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+              </div>
+              <div class="field">
+                <label for="contacto-alumno">Email o teléfono</label>
+                <input type="text" id="contacto-alumno" name="contacto" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="curso">Curso / nivel</label>
+                <input type="text" id="curso" name="curso" placeholder="Ej: 3º ESO">
+              </div>
+              <div class="field">
+                <label for="motivo">Asignatura o examen</label>
+                <input type="text" id="motivo" name="motivo" placeholder="Ej: First, deberes...">
+              </div>
+            </div>
+            <div class="field">
+              <label for="mensaje">Cuéntame tu caso</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Disponibilidad horaria, qué necesitas, etc."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Enviar mensaje</button>
+            <p class="form-note">Al enviar, recibiré tu mensaje directamente por email.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span class="logo">Inglés sin agobios</span>
+    <div>Clases particulares de inglés en Sevilla Este y alrededores · Presencial y online</div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
